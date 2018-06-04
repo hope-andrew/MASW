@@ -24,10 +24,10 @@ export default {
     async searchMovies({ commit }, payload) {
       const moviesResponse = await axios.post(`${CONSTANTS.API_URL}/search`, {
         title: payload,
-      })
+      });
       if (moviesResponse.status === 200) {
-        console.log("movie search response : ", moviesResponse.data.results)
-        commit('SET_SEARCH_RESULTS', moviesResponse.data.results)
+        console.log('movie search response : ', moviesResponse.data.results);
+        commit('SET_SEARCH_RESULTS', moviesResponse.data.results);
       } else {
         console.log('Error ');
       }

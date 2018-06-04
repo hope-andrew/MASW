@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import SearchResult from '@/components/SearchResult'
+import SearchResult from '@/components/SearchResult';
+
 export default {
   name: 'SearchResults',
   props: {
@@ -18,7 +19,7 @@ export default {
   components: {
     SearchResult,
   },
-}
+};
 </script>
 
 <style lang="css">

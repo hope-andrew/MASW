@@ -55,6 +55,7 @@ export default {
     ...mapActions('moviesStore', ['getMovies', 'searchMovies']),
     async requestMovies() {
       const movies = await this.getMovies();
+      console.log('movies response : ', movies);
     },
     async submitTitleSearch() {
       console.log(this.searchTitleInput);

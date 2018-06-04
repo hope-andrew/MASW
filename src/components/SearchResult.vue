@@ -14,6 +14,7 @@
 
 <script>
 import CONSTANTS from '@/services/constants';
+
 export default {
   name: 'SearchResult',
   props: {
@@ -23,11 +24,11 @@ export default {
   },
   computed: {
     posterUrl() {
-      const imdbUrlRegex = /https:\/\/.*.com\/.*/ ;
-      return imdbUrlRegex.test(this.result.poster) ? this.result.poster : CONSTANTS.DEFAULT_POSTER_URL
-    }
-  }
-}
+      const imdbUrlRegex = /https:\/\/.*.com\/.*/;
+      return imdbUrlRegex.test(this.result.poster) ? this.result.poster : CONSTANTS.DEFAULT_POSTER_URL;
+    },
+  },
+};
 </script>
 
 <style lang="scss">
